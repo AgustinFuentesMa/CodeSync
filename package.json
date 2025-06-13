@@ -1,19 +1,29 @@
 {
   "name": "monolitica1",
   "version": "1.0.0",
-  "description": "Gestor de tareas colaborativo - Proyecto universitario",
-  "main": "server.js",
+  "description": "Gestor de tareas colaborativo - Proyecto universitario con arquitectura de 3 capas",
+  "main": "src/app.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["task-manager", "collaborative", "nodejs", "express"],
+  "keywords": [
+    "task-manager",
+    "collaborative",
+    "nodejs",
+    "express",
+    "three-tier"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2",
-    "express-session": "^1.17.3",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
-    "bcryptjs": "^2.4.3"
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
